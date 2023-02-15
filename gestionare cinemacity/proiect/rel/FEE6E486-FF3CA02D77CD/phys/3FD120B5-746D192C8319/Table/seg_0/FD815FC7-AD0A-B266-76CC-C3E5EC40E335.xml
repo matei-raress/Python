@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CLIENT" directorySegmentName="seg_0" id="FD815FC7-AD0A-B266-76CC-C3E5EC40E335">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="statut" id="4BFC979C-C4A1-CF06-C483-03D7DF7B655C">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_client" id="89E2BD8A-35A5-368C-4355-237B0F03E866">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="varsta" id="A7BF50B4-D43C-9B48-FD95-DDF533121EFF">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Client_PK" id="5B45C946-F917-7DA6-DD0F-DFDDBFE47EDE">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

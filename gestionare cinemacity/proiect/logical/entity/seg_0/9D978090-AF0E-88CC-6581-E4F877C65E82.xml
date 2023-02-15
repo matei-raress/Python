@@ -1,0 +1,93 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9D978090-AF0E-88CC-6581-E4F877C65E82" name="TIP_BILET">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-07 20:27:17 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_tip" id="15A42DDE-FD5A-1DE5-FC7A-1C3FEEEBD10A">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 13:47:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_tip" id="C68D5103-6E87-BBA5-4616-20DD02364CA4">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 13:49:20 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="UPPER(%column%) =&apos;STUDENT&apos;  OR UPPER(%column%) =&apos;ELEV&apos; OR UPPER(%column%) =&apos;ADULT&apos; OR UPPER(%column%) =&apos;PENSIONAR&apos; OR UPPER(%column%) =&apos;COPIL&apos;  "/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="reducere" id="24B2D609-749A-2BCD-96B6-4C77BFE21816">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 13:56:22 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="%column%&gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="3D96917A-F4CA-A5C5-4830-26941B68C13D" name="tip_bilet_PK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 13:49:09 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>15A42DDE-FD5A-1DE5-FC7A-1C3FEEEBD10A</newElementsIDs>
+<usedAttributes>
+<attributeRef>15A42DDE-FD5A-1DE5-FC7A-1C3FEEEBD10A</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="5C677919-4FE2-17B4-E2E4-5D27ABBAC673" name="tip_film_UK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-05 22:15:58 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="false"/>
+</engineerTo>
+<newElementsIDs>C68D5103-6E87-BBA5-4616-20DD02364CA4</newElementsIDs>
+<usedAttributes>
+<attributeRef>C68D5103-6E87-BBA5-4616-20DD02364CA4</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

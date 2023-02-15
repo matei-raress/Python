@@ -1,0 +1,77 @@
+------------AFISARE
+
+---Filmele de actiune de la ora 10
+select  distinct film.nume_film as "Filmele de actiune de la ora 10" from film,detalii_film,gen_film,combinatie where film.id_film=detalii_film.id_film and gen_film.nume_gen like '%actiune%' and combinatie.data_ora_film like '% 10:%'; 
+
+--Biletele achizitionate  de un client
+select count(id_combinatie) as "Numarul de bilete cumparate de clientul cu id 4 "from bilet where id_client=4    ;
+
+--bilete vandute la The Notebook
+select count(bilet.id_combinatie) as "Numarul de bilete vandute la filmul The Notebook" from bilet,film where bilet.id_film=film.id_film and film.nume_film like '%The Notebook%';
+
+--filmele de pe 02-Dec-2022
+select distinct film.nume_film || ' ' || '(' || to_char(film.data_lansare,'yyyy') || ')' as "Filmele disponibile pe data de 02-Dec-2022" from combinatie, film where combinatie.id_film=film.id_film and combinatie.data_ora_film like'%02-DEC-22%';
+
+--afisare clienti
+select statut || ' cu varsta de ' || varsta || ' si ID ' || id_client  from client;
+
+--afisare bilete cu reducere Student
+select bilet.id_bilet, (select film.nume_film from film,combinatie where  bilet.id_combinatie=combinatie.id_combinatie and film.id_film=combinatie.id_film ) as "Film"  ,bilet.pret,bilet.nr_loc,bilet.nr_rand,tip_bilet.nume_tip from bilet,tip_bilet where bilet.id_tip=(select id_tip from tip_bilet where nume_tip='Student' ) and tip_bilet.nume_tip like 'Student';
+
+--afisare film cu orele disponibile 
+select film.nume_film || ' ' || '(' || to_char(film.data_lansare,'yyyy') || ')'  as "Film", combinatie.data_ora_film    from film,combinatie where film.id_film=combinatie.id_film ;
+
+--afisare numar de locuri libere la filmul The Notebook de la ora 22
+select nr_locuri_libere from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='The Notebook' and combinatie.data_ora_film like '% 22:%';
+
+
+
+----------------TESTARE/VALIDARE
+delete from bilet ;
+delete form combinatie where id_film=1;
+delete from detalii_bilet where id_film=1;
+delete form sala where id_sala=1;
+
+
+-- bilet.pret [0,50]
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) values(1,1,1,1,51,1,5,5);
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) values(1,1,1,1,-1,1,5,5);
+--bilet.nr_loc [1,20]
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) values(1,1,1,1,25,1,25,5);
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) values(1,1,1,1,25,1,0,5);
+--bilet.nr_rand [1:20]
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) values(1,1,1,1,25,1,5,25);
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) values(1,1,1,1,25,1,5,0);
+--bilet nr_rand si nr_loc unique
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) values(1,1,1,1,20,2,2,2);
+--client.varsta > 0
+insert into client(varsta,statut) values(0,'Elev');
+-- client.statut =! orice fel de tip
+insert into client(varsta,statut) values(15,'Animal');
+-- client.id_client PK
+insert into client values(1,15,'Elev');
+--combinatie sala film si ora unice
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values(1,1,'02-DEC-2022 10:00:00',300); 
+--combinatie.nr_locuri_libere [0,400]
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values(1,1,'02-DEC-2022 12:00:00',500); 
+
+--detalii_film.nota_film  <= 10 
+insert into detalii_film values(1,11,1,1);
+--actor nume_actor regex fara numere
+insert into actor values(10,'Vin D2342');
+
+--film.data_lansare >= '1-JAN-1922' 
+INSERT into film(nume_film,gen_film,data_lansare,nr_de_minute) values('WW1','actiune','02-DEC-1921',120);
+-- sala.nr_locuri_totale BETWEEN 0 AND 400
+insert into sala values(7,401,10);
+insert into sala values(1,-1,10);
+-- sala.randuri BETWEEN 1 AND 20
+insert into sala values(1,200,21);
+insert into sala values(1,200,-1);
+-- tip_bilet.nume_tip =! orice fel de tip
+insert into tip_bilet(nume_tip,reducere)  values('Animal',10);
+--tip_bilet.reducere >0
+insert into tip_bilet(nume_tip,reducere)  values('Animal',-1);
+
+
+

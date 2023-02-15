@@ -1,0 +1,32 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="ACTOR" directorySegmentName="seg_0" id="3BD36CD4-4CB1-DAB2-079F-E52B1D8F2167">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 11:01:24 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_actor" id="0881E928-1556-B029-6307-356753E3446C">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 11:01:24 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="nume_actor" id="769F4AFB-ADF4-63DB-39F8-FF9CBEB4D5DE">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 11:01:24 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="ACTOR_PK" id="5DDB7CB8-1289-C084-1AAB-F9257EE3CAE5">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 11:01:24 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

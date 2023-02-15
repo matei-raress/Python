@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Tip_Bilet_Bilet_FK" directorySegmentName="seg_0" id="FE58D0F3-7D24-8E6D-8D9E-5CB965AEB90B">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:27:09 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="EA019D55-21C6-2BE9-8F99-CDB1D9F984DD" value="true"/>
+</engineerTo>
+<sourcePk>3D96917A-F4CA-A5C5-4830-26941B68C13D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>poate defini</nameOnSource>
+<nameOnTarget>este </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9D978090-AF0E-88CC-6581-E4F877C65E82</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7C111970-A343-5F31-CD8B-843A8B03FB2F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

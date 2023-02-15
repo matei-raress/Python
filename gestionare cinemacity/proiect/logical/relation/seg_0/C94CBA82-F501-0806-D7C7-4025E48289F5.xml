@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Film_Combinatie_FK" directorySegmentName="seg_0" id="C94CBA82-F501-0806-D7C7-4025E48289F5">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:12:03 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<sourcePk>80D8899E-1D75-6BB4-0851-7C26C3B0FC9A</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>face parte din</nameOnSource>
+<nameOnTarget>are un</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>D15D8F34-814E-41E2-13F9-0B7D3CAD8A8E</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6CD1136B-0049-B690-AFA7-5F6220104864</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

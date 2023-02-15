@@ -1,0 +1,155 @@
+---------INSERARE DATE IN FILM
+
+INSERT into film(nume_film,data_lansare,nr_de_minute) values('Fast 9','20-DEC-2005',150);
+INSERT into film(nume_film,data_lansare,nr_de_minute) values('Batman','02-DEC-1975',120);
+INSERT into film(nume_film,data_lansare,nr_de_minute) values('Batman','20-APR-2008',120);
+INSERT into film(nume_film,data_lansare,nr_de_minute) values('The Notebook','02-DEC-2015',90);
+INSERT into film values(8,'James Bond: Absolution','18-JAN-2018',200);
+INSERT into film(nume_film,data_lansare,nr_de_minute) values('My own life','23-FEB-2001',90);
+
+----------INSERARE DATE IN ACTOR
+
+insert into actor(nume_actor) values('Vin Diesel') ;
+insert into actor(nume_actor) values('Christian Bale') ;
+insert into actor(nume_actor) values('Oldman Chris') ;
+insert into actor(nume_actor) values('Ryan Gosling') ;
+insert into actor(nume_actor) values('Daniel Craig') ;
+insert into actor(nume_actor) values('Matei Rares') ;
+
+-----------INSERARE DATE IN GEN_FILM
+
+insert into gen_film(nume_gen) values('actiune');
+insert into gen_film(nume_gen) values('dragoste');
+insert into gen_film(nume_gen) values('horror');
+insert into gen_film(nume_gen) values('comedie');
+insert into gen_film(nume_gen) values('thriler');
+insert into gen_film(nume_gen) values('mister');
+
+-----------INSERARE DATE IN DETALII_FILM
+
+insert into detalii_film(id_film,nota_film,id_actor,id_gen) values((select id_film from film where nume_film='Fast 9'),6.6,(select id_actor from actor where nume_actor='Vin Diesel'),(select id_gen from gen_film where nume_gen='actiune')); 
+insert into detalii_film(id_film,nota_film,id_actor,id_gen) values((select id_film from film where nume_film='Batman' and data_lansare like '%-08%'),8.7,(select id_actor from actor where nume_actor='Christian Bale'),(select id_gen from gen_film where nume_gen='actiune'));
+insert into detalii_film(id_film,nota_film,id_actor,id_gen) values((select id_film from film where nume_film='Batman' and data_lansare like '%-75%'),7.6,(select id_actor from actor where nume_actor='Oldman Chris'),(select id_gen from gen_film where nume_gen='comedie'));
+insert into detalii_film(id_film,nota_film,id_actor,id_gen) values((select id_film from film where nume_film='The Notebook'),9.3,(select id_actor from actor where nume_actor='Ryan Gosling'),(select id_gen from gen_film where nume_gen='dragoste'));
+insert into detalii_film(id_film,nota_film,id_actor,id_gen) values((select id_film from film where nume_film='James Bond: Absolution'),6.8,(select id_actor from actor where nume_actor='Daniel Craig'),(select id_gen from gen_film where nume_gen='actiune'));
+insert into detalii_film(id_film,nota_film,id_actor,id_gen) values((select id_film from film where nume_film='My own life'),9.9,(select id_actor from actor where nume_actor='Matei Rares'),(select id_gen from gen_film where nume_gen='horror'));
+
+-----------INSERARE DATE IN SALA
+
+insert into sala values(1,200,10);
+insert into sala values(2,250,15);
+insert into sala values(3,150,10);
+insert into sala values(4,100,15);
+insert into sala values(5,50,5);
+insert into sala values(6,200,15);
+
+-----------INSERARE DATE IN TIP_BILET
+
+insert into tip_bilet(nume_tip,reducere) values('Adult',0);
+insert into tip_bilet(nume_tip,reducere) values('Copil',10);
+insert into tip_bilet(nume_tip,reducere) values('Pensionar',5);
+insert into tip_bilet(nume_tip,reducere) values('Student',5);
+insert into tip_bilet(nume_tip,reducere) values('Elev',5);
+
+-----------INSERARE DATE IN CLIENT
+
+insert into client(varsta,statut) values(15,'Elev');
+insert into client(varsta,statut) values(23,'Adult');
+insert into client(varsta,statut) values(65,'Pensionar');
+insert into client(varsta,statut) values(22,'Student');
+insert into client(varsta,statut) values(16,'Adult');
+insert into client(varsta,statut) values(19,'Adult');
+
+-----------INSERARE DATE IN COMBINATIE
+
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='Fast 9'),( select id_sala from sala where id_sala=1),'02-DEC-2022 10:00:00',( select nr_locuri_totale from sala where id_sala=1)); /* setare in sql developer la show time */
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='Fast 9'),( select id_sala from sala where id_sala=1),(select TO_DATE('02-DEC-2022 10:00:00') + ((select nr_de_minute from film where nume_film='Fast 9')+40)/24/60 from dual),( select nr_locuri_totale from sala where id_sala=1)); /* setare in sql developer la show time */
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='Batman' and data_lansare like '%-08%'),( select id_sala from sala where id_sala=2),'02-DEC-2022 10:00:00',( select nr_locuri_totale from sala where id_sala=2));
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='Batman' and data_lansare like '%-75%'),( select id_sala from sala where id_sala=3),TO_DATE('02-DEC-2022 10:00:00'),( select nr_locuri_totale from sala where id_sala=6));
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='The Notebook'),( select id_sala from sala where id_sala=4),'02-DEC-2022 10:00:00',( select nr_locuri_totale from sala where id_sala=3));
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='My own life'),( select id_sala from sala where id_sala=5),'02-DEC-2022 10:00:00',( select nr_locuri_totale from sala where id_sala=4));
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='James Bond: Absolution'),( select id_sala from sala where id_sala=6),'02-DEC-2022 10:00:00',( select nr_locuri_totale from sala where id_sala=5));
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='The Notebook'),( select id_sala from sala where id_sala=4),(select to_date('02-DEC-2022 10:00:00')+((select nr_de_minute from film where nume_film='The Notebook')+40)/24/60 from dual),( select nr_locuri_totale from sala where id_sala=3));
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='The Notebook'),( select id_sala from sala where id_sala=4),(select to_date('03-DEC-2022 10:00:00')+((select nr_de_minute from film where nume_film='The Notebook')+40)*3/24/60 from dual),( select nr_locuri_totale from sala where id_sala=3));
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='The Notebook'),( select id_sala from sala where id_sala=4),'02-DEC-2022 22:30:00',( select nr_locuri_totale from sala where id_sala=3));
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='My own life'),( select id_sala from sala where id_sala=5),(select to_date('03-DEC-2022 10:00:00')+((select nr_de_minute from film where nume_film='The Notebook')+40)*4/24/60 from dual),( select nr_locuri_totale from sala where id_sala=4));
+insert into combinatie(id_film,id_sala,data_ora_film,nr_locuri_libere) values((select id_film from film where nume_film='My own life'),( select id_sala from sala where id_sala=5),(select to_date('04-DEC-2022 10:00:00')+((select nr_de_minute from film where nume_film='The Notebook')+40)*1/24/60 from dual),( select nr_locuri_totale from sala where id_sala=4));
+
+-----------INSERARE DATE IN BILET  -> CUMPARAREA UNOR BILETE SI ACTUALIZAREA LOCURILOR LIBERE DIN COMBINATIE
+
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) 
+values((select id_film from film where nume_film='Fast 9'),--id_film
+        (select avg(combinatie.id_sala) from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='Fast 9' ),--id_sala
+        (select combinatie.id_combinatie from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='Fast 9' and combinatie.data_ora_film like '% 10:%' and combinatie.data_ora_film like '%02-%'),--id_combinatie unde e nevoie si de ora(filmul e la mai multe ore)
+       (select tip_bilet.id_tip from tip_bilet,client where tip_bilet.nume_tip=client.statut and client.id_client=1),--id_tip
+    25-(select tip_bilet.reducere from tip_bilet,client  where tip_bilet.nume_tip=client.statut and client.id_client=1 ),--pret
+	1, --id_client
+	2,--nr_loc
+	2--nr_rand
+	);
+
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=(select combinatie.id_combinatie from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='Fast 9' and combinatie.data_ora_film like '% 10:%' and combinatie.data_ora_film like '%02-%');
+
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) 
+values((select id_film from film where nume_film='Batman' and data_lansare like '%-08%'),--id_film
+        (select combinatie.id_sala from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='Batman' and film.data_lansare like '%-08%' ),--id_sala
+        (select combinatie.id_combinatie from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='Batman' and film.data_lansare like '%-08%' and combinatie.data_ora_film like '% 10:%' and combinatie.data_ora_film like '%02-%'),--id_combinatie
+       (select tip_bilet.id_tip from tip_bilet,client where tip_bilet.nume_tip=client.statut and client.id_client=2),--id_tip
+    25-(select tip_bilet.reducere from tip_bilet,client  where tip_bilet.nume_tip=client.statut and client.id_client=2 ),--pret
+	2, --id_client
+	6,--nr_loc
+	8--nr_rand
+	);
+
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=(select combinatie.id_combinatie from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='Batman' and film.data_lansare like '%-08%' and combinatie.data_ora_film like '% 10:%' and combinatie.data_ora_film like '%02-%');
+
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) 
+values((select id_film from film where nume_film='The Notebook'),--id_film
+        (select avg(combinatie.id_sala) from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='The Notebook' ),--id_sala
+        (select combinatie.id_combinatie from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='The Notebook' and combinatie.data_ora_film like '% 22:%' and combinatie.data_ora_film like '%02-%'),--id_combinatie unde e nevoie si de ora(filmul e la mai multe ore)
+       (select tip_bilet.id_tip from tip_bilet,client where tip_bilet.nume_tip=client.statut and client.id_client=3),--id_tip
+    25-(select tip_bilet.reducere from tip_bilet,client  where tip_bilet.nume_tip=client.statut and client.id_client=3 ),--pret
+	3, --id_client
+	4,--nr_loc
+	4--nr_rand
+	);
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=(select combinatie.id_combinatie from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='The Notebook' and data_ora_film like '% 22:%' and combinatie.data_ora_film like '%02-%');
+
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) 
+values((select id_film from film where nume_film='The Notebook'),--id_film
+        (select avg(combinatie.id_sala) from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='The Notebook' ),--id_sala
+        (select combinatie.id_combinatie from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='The Notebook' and combinatie.data_ora_film like '% 22:%' and combinatie.data_ora_film like '%02-%'),--id_combinatie unde e nevoie si de ora(filmul e la mai multe ore)
+       (select tip_bilet.id_tip from tip_bilet,client where tip_bilet.nume_tip=client.statut and client.id_client=3),--id_tip
+    25-(select tip_bilet.reducere from tip_bilet,client  where tip_bilet.nume_tip=client.statut and client.id_client=3 ),--pret
+	3, --id_client
+	5,--nr_loc
+	4--nr_rand
+	);
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=(select combinatie.id_combinatie from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='The Notebook' and data_ora_film like '% 22:%' and combinatie.data_ora_film like '%02-%');
+
+insert into bilet ( id_film,id_sala,id_combinatie,id_tip,pret,id_client, nr_loc,nr_rand) 
+values((select id_film from film where nume_film='Fast 9'),--id_film
+        (select avg(combinatie.id_sala) from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='Fast 9' ),--id_sala
+        (select combinatie.id_combinatie from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='Fast 9' and combinatie.data_ora_film like '% 10:%' and combinatie.data_ora_film like '%02-%'),--id_combinatie unde e nevoie si de ora(filmul e la mai multe ore)
+       (select tip_bilet.id_tip from tip_bilet,client where tip_bilet.nume_tip=client.statut and client.id_client=6),--id_tip
+    25-(select tip_bilet.reducere from tip_bilet,client  where tip_bilet.nume_tip=client.statut and client.id_client=6 ),--pret
+	6, --id_client
+	2,--nr_loc
+	3--nr_rand
+	);
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=(select combinatie.id_combinatie from combinatie,film where combinatie.id_film=film.id_film and film.nume_film='Fast 9' and data_ora_film like '% 10:%' and combinatie.data_ora_film like '%02-%');
+
+-----------INSERARE DATE IN BILET --> CUMPARAREA DIRECTA A MAI MULTOR LOCURI SI ACTUALIZAREA LOCURILOR LOBERE DIN COMBINATIE
+
+insert into bilet(id_film,id_sala,id_combinatie,id_client,id_tip,pret,nr_loc,nr_rand) values (4,4,5,4,4,20,11,11) ;
+insert into bilet(id_film,id_sala,id_combinatie,id_client,id_tip,pret,nr_loc,nr_rand) values (4,4,5,4,4,20,12,11) ;
+insert into bilet(id_film,id_sala,id_combinatie,id_client,id_tip,pret,nr_loc,nr_rand) values (4,4,5,4,4,20,13,11) ;
+insert into bilet(id_film,id_sala,id_combinatie,id_client,id_tip,pret,nr_loc,nr_rand) values (4,4,5,4,4,20,14,11) ;
+insert into bilet(id_film,id_sala,id_combinatie,id_client,id_tip,pret,nr_loc,nr_rand) values (4,4,5,4,4,20,15,11) ;
+insert into bilet(id_film,id_sala,id_combinatie,id_client,id_tip,pret,nr_loc,nr_rand) values (4,4,5,4,4,20,16,11) ;
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=5;
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=5;
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=5;
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=5;
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=5;
+update combinatie set nr_locuri_libere =nr_locuri_libere-1 where id_combinatie=5;

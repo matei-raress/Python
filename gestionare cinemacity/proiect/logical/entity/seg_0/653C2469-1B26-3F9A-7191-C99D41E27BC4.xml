@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="653C2469-1B26-3F9A-7191-C99D41E27BC4" name="DETALII_FILM">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-18 10:57:27 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nota_film" id="93D038C0-1429-5FEA-E723-87D91F2AD53F">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-18 10:57:43 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="%column% &lt;= 10"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_film" id="D6BCD188-704F-3B17-9A49-CF5DC9996560">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-18 11:03:53 UTC</createdTime>
+<generatorID>962926D5-BB95-6CDB-1983-3E2F84B8EDA1</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<referedAttribute>C2B19C38-BFA0-8352-FF92-D90C4C9FD5A1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_actor" id="DD7BF925-816D-B0E8-C444-1E853B47FDF2">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 10:56:05 UTC</createdTime>
+<generatorID>EDC87492-684E-85E3-6413-17870875ABF9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<referedAttribute>A5216100-23ED-6CF4-3345-984B7AC768E6</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_gen" id="453E748C-8D38-7AD0-E2A0-3B9D1EE84C64">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 14:20:14 UTC</createdTime>
+<generatorID>3560A2C0-6728-2A1F-CE3D-1EA3E847012C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<referedAttribute>CF9025E0-4E82-038F-98EC-646A5AE59EF4</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+</Entity>

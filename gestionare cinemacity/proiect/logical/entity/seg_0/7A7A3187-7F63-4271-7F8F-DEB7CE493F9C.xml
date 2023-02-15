@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7A7A3187-7F63-4271-7F8F-DEB7CE493F9C" name="GEN_FILM">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 10:53:33 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="nume_gen" id="8B0BF83B-38D9-66FB-5685-59D95E983D49">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 11:02:07 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( %column%,&apos;^[a-zA-Z]*$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_gen" id="CF9025E0-4E82-038F-98EC-646A5AE59EF4">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 14:19:52 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="68D6C7F0-1331-F9C0-1C49-57171587581E" name="GEN_FILM_PK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 14:20:10 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>CF9025E0-4E82-038F-98EC-646A5AE59EF4</newElementsIDs>
+<usedAttributes>
+<attributeRef>CF9025E0-4E82-038F-98EC-646A5AE59EF4</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="092BA353-E39C-8EAC-F22E-F7421C2BBD9F" name="NUME_GEN_uk">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-16 09:14:52 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<newElementsIDs>8B0BF83B-38D9-66FB-5685-59D95E983D49</newElementsIDs>
+<usedAttributes>
+<attributeRef>8B0BF83B-38D9-66FB-5685-59D95E983D49</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,72 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="FD815FC7-AD0A-B266-76CC-C3E5EC40E335" name="CLIENT">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>D4291C19-08EE-6299-F932-8F73C45EFED9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_client" id="89E2BD8A-35A5-368C-4355-237B0F03E866">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>DAACB210-4363-0480-89EB-750AEE649400</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="varsta" id="A7BF50B4-D43C-9B48-FD95-DDF533121EFF">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<comment><![CDATA[Daca e copil sau adult]]></comment>
+<generatorID>121126C2-E0CC-FF41-5D1B-3C6ECE2AA5D6</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="%column%&gt;0"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="statut" id="4BFC979C-C4A1-CF06-C483-03D7DF7B655C">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<comment><![CDATA[Daca e adult/pensionar/student]]></comment>
+<generatorID>68866D3C-5830-0E8F-990D-2B087680A3DA</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="UPPER(%column%) =&apos;STUDENT&apos;  OR UPPER(%column%) =&apos;ELEV&apos; OR UPPER(%column%) =&apos;ADULT&apos; OR UPPER(%column%) =&apos;PENSIONAR&apos; OR UPPER(%column%) =&apos;COPIL&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="5B45C946-F917-7DA6-DD0F-DFDDBFE47EDE" name="Client_PK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>0DB898DD-12E7-25E3-0473-97CD6FFFE8AF</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="89E2BD8A-35A5-368C-4355-237B0F03E866"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

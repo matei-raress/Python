@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="86915E9D-C4A7-DA7B-C84E-7176109890A5" containerWithKeyObject="7BE166BD-F1EC-F16B-EED0-258434ECE75F" localFKIndex="2176144E-FBCF-C0FC-C89D-DB01E96D10E4" name="Tip_Bilet_Bilet_FK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>FE58D0F3-7D24-8E6D-8D9E-5CB965AEB90B</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<referredTableLongName>TIP_BILET</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>31941BA1-4A8A-17FB-5508-E23C0AD63365</referredTableID>
+<keyObject>9B397C49-8DDB-7133-9DF4-DFB5B7A9A438</keyObject>
+<referredKeyID>9B397C49-8DDB-7133-9DF4-DFB5B7A9A438</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_tip</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,84 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="BILET" directorySegmentName="seg_0" id="7BE166BD-F1EC-F16B-EED0-258434ECE75F">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="nr_rand" id="30C82B78-7D24-9AD4-62B7-3D8CFB5BBF26">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="pret" id="5773F291-4C8F-E666-3AE1-4EC883E88D1B">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_client" id="6FFB3983-E9F0-98B7-C49D-157A1057C4D4">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_sala" id="705C8ED1-5D04-5D4E-E3F9-1DC9A39214AD">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nr_loc" id="8AE478F0-7B47-1A07-D171-49B4F93B1F4A">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_film" id="8D1BA73D-F1ED-6F76-DAFD-C12CE78779DD">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_tip" id="B6D5C4EC-3473-E776-5237-DE7747113971">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_combinatie" id="D03906D2-8303-2694-FB8A-25674AA64D8F">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_bilet" id="FB025166-CF2A-5364-6BA8-4E399DCD3156">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Client_Bilet_Fk" id="119C4BC8-2E9D-3739-311A-FC59CAB4EEBF">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Tip_Bilet_Bilet_FK" id="2176144E-FBCF-C0FC-C89D-DB01E96D10E4">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="Combinatie_Bilet_FK" id="DDCB7484-BCBB-C43B-5681-A1CC21CBEF31">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Bilet_PK" id="9E151FC1-43C5-0178-4050-31DF966D4B91">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

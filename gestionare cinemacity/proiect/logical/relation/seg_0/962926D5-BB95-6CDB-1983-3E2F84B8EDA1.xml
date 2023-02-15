@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Film_Detalii_Film_FK" directorySegmentName="seg_0" id="962926D5-BB95-6CDB-1983-3E2F84B8EDA1">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-18 11:02:00 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<targetPk>80D8899E-1D75-6BB4-0851-7C26C3B0FC9A</targetPk>
+<identifying>false</identifying>
+<nameOnSource>pentru un</nameOnSource>
+<nameOnTarget>are </nameOnTarget>
+<optionalSource>false</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>653C2469-1B26-3F9A-7191-C99D41E27BC4</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>D15D8F34-814E-41E2-13F9-0B7D3CAD8A8E</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

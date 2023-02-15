@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6CD1136B-0049-B690-AFA7-5F6220104864" name="COMBINATIE">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-07 20:06:51 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_combinatie" id="81AD9235-6C25-6C96-0B9E-12161758B459">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 17:55:36 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_film" id="9F94468B-F192-A9A0-6205-5A373163272C">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:13:44 UTC</createdTime>
+<generatorID>C94CBA82-F501-0806-D7C7-4025E48289F5</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<referedAttribute>C2B19C38-BFA0-8352-FF92-D90C4C9FD5A1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sala" id="C2F88198-80E9-6DE8-5842-04BBE631264F">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:18:37 UTC</createdTime>
+<generatorID>9D468AB9-EA48-76CD-44AE-9CB9EECA8D09</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<referedAttribute>03020761-5565-A7D1-12CB-25340BE2C028</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_ora_film" id="DC5EFA65-7C71-F77F-B4D9-D55D5027E27A">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-18 10:27:13 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_locuri_libere" id="42CC034F-6A90-314B-9B3D-C55329C7FCCD">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-06 18:47:58 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>400</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="77ACAD24-0B9A-B470-CEE3-5C3E1C94846D" name="Combinatie_pk">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-07 20:07:23 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C94CBA82-F501-0806-D7C7-4025E48289F5,9D468AB9-EA48-76CD-44AE-9CB9EECA8D09,81AD9235-6C25-6C96-0B9E-12161758B459</newElementsIDs>
+<usedAttributes>
+<attributeRef>9F94468B-F192-A9A0-6205-5A373163272C</attributeRef>
+<attributeRef>C2F88198-80E9-6DE8-5842-04BBE631264F</attributeRef>
+<attributeRef>81AD9235-6C25-6C96-0B9E-12161758B459</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="20A0ACC2-33C8-C990-46B6-F71ADA16E5A5" name="Combinatie_sala_ora_UK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-10 10:32:06 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="false"/>
+</engineerTo>
+<newElementsIDs>C2F88198-80E9-6DE8-5842-04BBE631264F,DC5EFA65-7C71-F77F-B4D9-D55D5027E27A</newElementsIDs>
+<usedAttributes>
+<attributeRef>C2F88198-80E9-6DE8-5842-04BBE631264F</attributeRef>
+<attributeRef>DC5EFA65-7C71-F77F-B4D9-D55D5027E27A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A206B202-BDCC-753C-B5CE-ED43571B8D2A" name="ACTOR">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 10:53:47 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_actor" id="A5216100-23ED-6CF4-3345-984B7AC768E6">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 10:55:31 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_actor" id="5BB86846-A036-C1B5-F2BF-C067EB8887C0">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 10:56:41 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( %column%,  &apos;^[a-zA-Z ]*$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6C6BB48D-7C31-3ECD-994B-11FCDF9ACA5A" name="ACTOR_ PK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 10:55:39 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>A5216100-23ED-6CF4-3345-984B7AC768E6</newElementsIDs>
+<usedAttributes>
+<attributeRef>A5216100-23ED-6CF4-3345-984B7AC768E6</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="449654E4-16B4-DE0B-F2E4-C0997533B4C6" name="nume_uk">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-16 09:13:53 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<newElementsIDs>5BB86846-A036-C1B5-F2BF-C067EB8887C0</newElementsIDs>
+<usedAttributes>
+<attributeRef>5BB86846-A036-C1B5-F2BF-C067EB8887C0</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

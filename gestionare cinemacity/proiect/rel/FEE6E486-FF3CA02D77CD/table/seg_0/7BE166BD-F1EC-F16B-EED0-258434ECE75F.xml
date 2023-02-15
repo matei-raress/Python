@@ -1,0 +1,222 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7BE166BD-F1EC-F16B-EED0-258434ECE75F" name="BILET">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>7C111970-A343-5F31-CD8B-843A8B03FB2F</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_bilet" id="FB025166-CF2A-5364-6BA8-4E399DCD3156">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>16E6B65C-6D1C-A8CC-8A3F-99C0FAF675FA</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_film" id="8D1BA73D-F1ED-6F76-DAFD-C12CE78779DD">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>7CD80D85-AB46-72ED-CFA1-4D0BA582A059</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1D72DE6-83CB-C437-784F-5C99C136F6CF" referredColumn="E1809FCF-F575-45A6-EC5E-C93C74AD10C5"/>
+</associations>
+</Column>
+<Column name="id_sala" id="705C8ED1-5D04-5D4E-E3F9-1DC9A39214AD">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>F4860274-E688-42F3-CE57-6755897572BE</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1D72DE6-83CB-C437-784F-5C99C136F6CF" referredColumn="0804D55C-FEE4-834C-CEB4-9883D30FE542"/>
+</associations>
+</Column>
+<Column name="id_combinatie" id="D03906D2-8303-2694-FB8A-25674AA64D8F">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>51835D5C-EDAB-AACB-909E-CF51EA2577C3</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="B1D72DE6-83CB-C437-784F-5C99C136F6CF" referredColumn="4A35CEAE-4814-4C91-9445-428D694E12A7"/>
+</associations>
+</Column>
+<Column name="id_client" id="6FFB3983-E9F0-98B7-C49D-157A1057C4D4">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>64093F16-6FC0-6F22-D86A-FC3B0BD97D92</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59C1F588-D109-ABE0-71C4-8B6D59AA5D1B" referredColumn="89E2BD8A-35A5-368C-4355-237B0F03E866"/>
+</associations>
+</Column>
+<Column name="id_tip" id="B6D5C4EC-3473-E776-5237-DE7747113971">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>A4D552EB-E964-40DD-CDAD-78F75C18B011</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="86915E9D-C4A7-DA7B-C84E-7176109890A5" referredColumn="0DF7E8D1-27B4-32AB-CB66-85A780D89178"/>
+</associations>
+</Column>
+<Column name="pret" id="5773F291-4C8F-E666-3AE1-4EC883E88D1B">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>D13B1E1E-8E79-BB72-79E3-26FDEC10F764</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>50</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="nr_loc" id="8AE478F0-7B47-1A07-D171-49B4F93B1F4A">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>D7663774-0B44-9E55-8BEE-CFB4717657C8</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>20</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+<Column name="nr_rand" id="30C82B78-7D24-9AD4-62B7-3D8CFB5BBF26">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>298E8C67-0D5F-A294-0DB8-65D5728525A1</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>20</endValue>
+</rangeDef>
+</listOfRanges>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E151FC1-43C5-0178-4050-31DF966D4B91" name="Bilet_PK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>0393A03F-6E6A-5A65-7313-6D3542567A34</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FB025166-CF2A-5364-6BA8-4E399DCD3156"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="646289DB-7068-6415-F1AD-BB90E97BBC62" name="Bilet_Combinatie_scaun">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-10 10:55:22 UTC</createdTime>
+<generatorID>0F4E1D94-8BF8-5EC2-5503-15F639C0E6AB</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D03906D2-8303-2694-FB8A-25674AA64D8F"/>
+<colUsage columnID="8AE478F0-7B47-1A07-D171-49B4F93B1F4A"/>
+<colUsage columnID="30C82B78-7D24-9AD4-62B7-3D8CFB5BBF26"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="119C4BC8-2E9D-3739-311A-FC59CAB4EEBF" name="Client_Bilet_Fk">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>756F6B69-6EC6-C08C-D45A-CE8B8DA4FC01</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FFB3983-E9F0-98B7-C49D-157A1057C4D4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DDCB7484-BCBB-C43B-5681-A1CC21CBEF31" name="Combinatie_Bilet_FK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>8F51E350-3BC7-1C2D-1A7C-0323A5798880</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="8D1BA73D-F1ED-6F76-DAFD-C12CE78779DD"/>
+<colUsage columnID="705C8ED1-5D04-5D4E-E3F9-1DC9A39214AD"/>
+<colUsage columnID="D03906D2-8303-2694-FB8A-25674AA64D8F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="2176144E-FBCF-C0FC-C89D-DB01E96D10E4" name="Tip_Bilet_Bilet_FK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>FE58D0F3-7D24-8E6D-8D9E-5CB965AEB90B</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B6D5C4EC-3473-E776-5237-DE7747113971"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

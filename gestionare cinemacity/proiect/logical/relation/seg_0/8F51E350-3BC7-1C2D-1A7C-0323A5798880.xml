@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Combinatie_Bilet_FK" directorySegmentName="seg_0" id="8F51E350-3BC7-1C2D-1A7C-0323A5798880">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:23:18 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<sourcePk>77ACAD24-0B9A-B470-CEE3-5C3E1C94846D</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>defineste</nameOnSource>
+<nameOnTarget>are o</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>6CD1136B-0049-B690-AFA7-5F6220104864</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>7C111970-A343-5F31-CD8B-843A8B03FB2F</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

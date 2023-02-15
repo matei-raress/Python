@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="327C9517-AF53-67E6-6BF6-C869106CB69C" name="GEN_FILM">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 11:01:24 UTC</createdTime>
+<generatorID>7A7A3187-7F63-4271-7F8F-DEB7CE493F9C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="nume_gen" id="25ADDA83-786B-9E4B-2635-038618FE20CB">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 11:03:50 UTC</createdTime>
+<generatorID>8B0BF83B-38D9-66FB-5685-59D95E983D49</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE ( %column%,&apos;^[a-zA-Z]*$&apos; )"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_gen" id="F89B3DCA-C920-4F7B-9811-9E25613A981B">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 14:20:22 UTC</createdTime>
+<generatorID>CF9025E0-4E82-038F-98EC-646A5AE59EF4</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="F82B0ADF-1F0A-E75B-33D2-4481387A7D08" name="GEN_FILM_PK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 14:20:22 UTC</createdTime>
+<generatorID>68D6C7F0-1331-F9C0-1C49-57171587581E</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F89B3DCA-C920-4F7B-9811-9E25613A981B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0FE067C2-1193-8237-7826-DEA2F50B8DEE" name="NUME_GEN_uk">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-16 09:15:30 UTC</createdTime>
+<generatorID>092BA353-E39C-8EAC-F22E-F7421C2BBD9F</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="25ADDA83-786B-9E4B-2635-038618FE20CB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

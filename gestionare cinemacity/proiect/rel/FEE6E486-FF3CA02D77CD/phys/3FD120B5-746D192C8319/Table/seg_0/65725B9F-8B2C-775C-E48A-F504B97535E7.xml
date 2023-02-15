@@ -1,0 +1,42 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="SALA" directorySegmentName="seg_0" id="65725B9F-8B2C-775C-E48A-F504B97535E7">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="randuri" id="14F24A84-3646-CE39-A21F-6FE066145AC6">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="nr_locuri_totale" id="3527A833-3C21-A969-C940-989C495E5BBE">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="id_sala" id="9DA2AD70-0A0B-D281-AED1-33DC1F4AEF2B">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="nr_locuri_libere" id="BF768A24-E4B2-860C-386D-959986FF2F03">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="Sala_pk" id="1E5F641C-1212-13F2-4B64-A314AE408881">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

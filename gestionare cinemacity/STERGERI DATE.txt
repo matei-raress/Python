@@ -1,0 +1,41 @@
+
+------------STERGERI Trece ora, se sterge combinatia respectiva acelei ore din ziua respectiva
+
+delete from bilet where bilet.id_combinatie in(select id_combinatie from combinatie where data_ora_film like '%10:%' and data_ora_film like '%02-%');
+delete from combinatie where combinatie.data_ora_film like '% 10:%'  and data_ora_film like '%02-%' ;
+
+
+--------Stergeri totale
+
+delete from bilet;
+delete from client ;
+delete from combinatie;
+delete from detalii_film;
+delete from sala;
+delete from film;
+delete from tip_bilet;
+delete from actor;
+delete from gen_film;
+
+
+drop table bilet cascade constraints purge;
+drop table combinatie cascade constraints purge;
+drop table CLIENT cascade constraints purge;
+drop table detalii_film cascade constraints purge;
+drop table film cascade constraints purge;
+drop table sala cascade constraints purge;
+drop table tip_bilet cascade constraints purge;
+drop table actor cascade constraints purge;
+drop table gen_film cascade constraints purge;
+
+
+drop sequence bilet_id_bilet_seq;
+drop sequence client_id_client_seq;
+drop sequence combinatie_id_combinatie_seq;
+drop sequence detalii_film_id_film_seq;
+drop sequence film_id_film_seq;
+drop sequence sala_id_sala_seq;
+drop sequence tip_bilet_id_tip_seq;
+drop sequence actor_id_actor_seq;
+drop sequence gen_film_id_gen_seq;
+

@@ -1,0 +1,37 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="TIP_BILET" directorySegmentName="seg_0" id="31941BA1-4A8A-17FB-5508-E23C0AD63365">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="id_tip" id="0DF7E8D1-27B4-32AB-CB66-85A780D89178">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<autoIncrementDDL>IDENTITY_CLAUSE</autoIncrementDDL>
+</ColumnProxy>
+<ColumnProxy name="nume_tip" id="3FC7551E-2D7D-D960-BE3F-8FBAAB24ED4C">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="reducere" id="4F02DEB4-B8AD-F7C9-37B6-57D2F53778FA">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="tip_bilet_PK" id="9B397C49-8DDB-7133-9DF4-DFB5B7A9A438">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:54 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

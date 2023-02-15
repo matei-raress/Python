@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="Sala_Combinatie_FK" directorySegmentName="seg_0" id="9D468AB9-EA48-76CD-44AE-9CB9EECA8D09">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:18:37 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<sourcePk>499514BF-9F59-F9BB-3DBC-1A433492DB99</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>face parte din</nameOnSource>
+<nameOnTarget>are o</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>4EE11BD7-F27D-6E05-BB39-B59504C514DD</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>6CD1136B-0049-B690-AFA7-5F6220104864</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

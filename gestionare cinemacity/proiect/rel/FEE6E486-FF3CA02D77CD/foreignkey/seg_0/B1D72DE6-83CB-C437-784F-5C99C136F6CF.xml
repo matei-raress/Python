@@ -1,0 +1,17 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="B1D72DE6-83CB-C437-784F-5C99C136F6CF" containerWithKeyObject="7BE166BD-F1EC-F16B-EED0-258434ECE75F" localFKIndex="DDCB7484-BCBB-C43B-5681-A1CC21CBEF31" name="Combinatie_Bilet_FK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>8F51E350-3BC7-1C2D-1A7C-0323A5798880</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<referredTableLongName>COMBINATIE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>2D06A1B8-37C3-968C-8AEF-3EB61F09340F</referredTableID>
+<keyObject>C7722B73-CDA2-D8E0-88B2-947F40843074</keyObject>
+<referredKeyID>C7722B73-CDA2-D8E0-88B2-947F40843074</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>id_film,id_sala,id_combinatie</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,125 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D5F06FD4-03BC-C091-B288-ACA6C37762D5" name="DETALII_FILM">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>653C2469-1B26-3F9A-7191-C99D41E27BC4</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_film" id="32C42481-CCA8-ED21-009F-D714A4D42ACD">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>D6BCD188-704F-3B17-9A49-CF5DC9996560</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="F30EBFEB-10D5-9E3A-2578-580F47CAF778" referredColumn="1F16007E-D670-607B-CD0F-C214CA7542A3"/>
+</associations>
+</Column>
+<Column name="nota_film" id="0406BBED-BE3D-D0B6-D90E-5FCF5911ABF1">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>93D038C0-1429-5FEA-E723-87D91F2AD53F</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="%column% &lt;= 10"/>
+</checkConstraint>
+<ownDataTypeParameters>,4,2</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="id_actor" id="6FB2BC03-0780-9553-09C8-732E8CC983ED">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 11:01:24 UTC</createdTime>
+<generatorID>DD7BF925-816D-B0E8-C444-1E853B47FDF2</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="FE1865BC-3C8B-8FC5-ADD5-A7FC5A26696F" referredColumn="0881E928-1556-B029-6307-356753E3446C"/>
+</associations>
+</Column>
+<Column name="id_gen" id="55628CD1-ADA3-CBA0-5A3B-54C162D16887">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 14:20:22 UTC</createdTime>
+<generatorID>453E748C-8D38-7AD0-E2A0-3B9D1EE84C64</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="901A4F0D-265F-BCE7-224B-D2198545FFAC" referredColumn="F89B3DCA-C920-4F7B-9811-9E25613A981B"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="88FD7BCC-0048-B943-E4CA-AEF390981A33" name="DETALII_FILM_ID">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>962926D5-BB95-6CDB-1983-3E2F84B8EDA1</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="32C42481-CCA8-ED21-009F-D714A4D42ACD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F7380F62-4EA6-E42C-3150-2D501C2F4E69" name="Film_Detalii_Film_FK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>962926D5-BB95-6CDB-1983-3E2F84B8EDA1</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="32C42481-CCA8-ED21-009F-D714A4D42ACD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="30B3F29D-15CC-A2A7-8B4E-7FC10986599F" name="Detalii_film_Actor_FK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 11:01:24 UTC</createdTime>
+<generatorID>EDC87492-684E-85E3-6413-17870875ABF9</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6FB2BC03-0780-9553-09C8-732E8CC983ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7560EC12-6781-6087-A554-1DF0039FCFCD" name="Detalii_film_Gen_film_FK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-15 14:20:22 UTC</createdTime>
+<generatorID>3560A2C0-6728-2A1F-CE3D-1EA3E847012C</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="55628CD1-ADA3-CBA0-5A3B-54C162D16887"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

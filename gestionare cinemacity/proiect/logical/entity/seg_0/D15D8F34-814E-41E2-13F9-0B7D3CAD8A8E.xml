@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="D15D8F34-814E-41E2-13F9-0B7D3CAD8A8E" name="FILM">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-07 20:04:28 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_film" id="C2B19C38-BFA0-8352-FF92-D90C4C9FD5A1">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-07 20:04:38 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nume_film" id="8D0F9867-C093-CF8E-104A-4A500B813E27">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-07 20:05:30 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="data_lansare" id="F2DD3A13-55E3-887F-5ADD-52B35A5EDA6F">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-18 11:35:21 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="%column% &gt;= &apos;1-JAN-1922&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="nr_de_minute" id="653D9865-1E1D-2F84-2E70-372FC58AF5A0">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 13:59:50 UTC</createdTime>
+<comment><![CDATA[Dupa fiecare film este pauza de 40 de minute]]></comment>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="80D8899E-1D75-6BB4-0851-7C26C3B0FC9A" name="Film_PK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-07 20:07:30 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>C2B19C38-BFA0-8352-FF92-D90C4C9FD5A1</newElementsIDs>
+<usedAttributes>
+<attributeRef>C2B19C38-BFA0-8352-FF92-D90C4C9FD5A1</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0A9E8602-F351-A529-B6AD-E967949DEF11" name="Film_nume_data_lansare_UK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-10 10:49:44 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="false"/>
+</engineerTo>
+<newElementsIDs>8D0F9867-C093-CF8E-104A-4A500B813E27,F2DD3A13-55E3-887F-5ADD-52B35A5EDA6F</newElementsIDs>
+<usedAttributes>
+<attributeRef>8D0F9867-C093-CF8E-104A-4A500B813E27</attributeRef>
+<attributeRef>F2DD3A13-55E3-887F-5ADD-52B35A5EDA6F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

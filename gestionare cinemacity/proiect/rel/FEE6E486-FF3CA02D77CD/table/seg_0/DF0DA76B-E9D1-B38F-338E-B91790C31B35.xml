@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="DF0DA76B-E9D1-B38F-338E-B91790C31B35" name="FILM">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>D15D8F34-814E-41E2-13F9-0B7D3CAD8A8E</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_film" id="1F16007E-D670-607B-CD0F-C214CA7542A3">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>C2B19C38-BFA0-8352-FF92-D90C4C9FD5A1</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_film" id="B0F2C164-F5CB-4DB4-138C-9015B0D4FB00">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>8D0F9867-C093-CF8E-104A-4A500B813E27</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="data_lansare" id="F2866D3F-11EF-30B8-9CBC-56F0646CA2D9">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>F2DD3A13-55E3-887F-5ADD-52B35A5EDA6F</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="%column% &gt;= &apos;1-JAN-1922&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nr_de_minute" id="23BD937B-D79C-A947-4C65-6E2DE3A13711">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<comment><![CDATA[Dupa fiecare film este pauza de 40 de minute]]></comment>
+<generatorID>653D9865-1E1D-2F84-2E70-372FC58AF5A0</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="75F885D9-2033-0359-44CD-F37BFDD0999D" name="Film_pk">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>80D8899E-1D75-6BB4-0851-7C26C3B0FC9A</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="1F16007E-D670-607B-CD0F-C214CA7542A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F63048E6-EBAA-19AC-BE6A-26DF5679D1AC" name="Film_nume_data_lansare_UK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-10 10:55:22 UTC</createdTime>
+<generatorID>0A9E8602-F351-A529-B6AD-E967949DEF11</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="B0F2C164-F5CB-4DB4-138C-9015B0D4FB00"/>
+<colUsage columnID="F2866D3F-11EF-30B8-9CBC-56F0646CA2D9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

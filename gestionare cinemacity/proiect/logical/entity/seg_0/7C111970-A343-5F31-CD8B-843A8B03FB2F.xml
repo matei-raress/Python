@@ -1,0 +1,195 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="7C111970-A343-5F31-CD8B-843A8B03FB2F" name="BILET">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-07 20:27:00 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="id_bilet" id="16E6B65C-6D1C-A8CC-8A3F-99C0FAF675FA">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:46:26 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_film" id="7CD80D85-AB46-72ED-CFA1-4D0BA582A059">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:23:18 UTC</createdTime>
+<generatorID>8F51E350-3BC7-1C2D-1A7C-0323A5798880</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<referedAttribute>9F94468B-F192-A9A0-6205-5A373163272C</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_sala" id="F4860274-E688-42F3-CE57-6755897572BE">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:23:18 UTC</createdTime>
+<generatorID>8F51E350-3BC7-1C2D-1A7C-0323A5798880</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<referedAttribute>C2F88198-80E9-6DE8-5842-04BBE631264F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_combinatie" id="51835D5C-EDAB-AACB-909E-CF51EA2577C3">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 17:55:50 UTC</createdTime>
+<generatorID>8F51E350-3BC7-1C2D-1A7C-0323A5798880</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<referedAttribute>81AD9235-6C25-6C96-0B9E-12161758B459</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_client" id="64093F16-6FC0-6F22-D86A-FC3B0BD97D92">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:26:01 UTC</createdTime>
+<generatorID>756F6B69-6EC6-C08C-D45A-CE8B8DA4FC01</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<referedAttribute>DAACB210-4363-0480-89EB-750AEE649400</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="id_tip" id="A4D552EB-E964-40DD-CDAD-78F75C18B011">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:27:09 UTC</createdTime>
+<generatorID>FE58D0F3-7D24-8E6D-8D9E-5CB965AEB90B</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<referedAttribute>15A42DDE-FD5A-1DE5-FC7A-1C3FEEEBD10A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="pret" id="D13B1E1E-8E79-BB72-79E3-26FDEC10F764">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 14:43:39 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>0</beginValue>
+<endValue>50</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="nr_loc" id="D7663774-0B44-9E55-8BEE-CFB4717657C8">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 13:57:14 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>20</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+<Attribute name="nr_rand" id="298E8C67-0D5F-A294-0DB8-65D5728525A1">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-10 19:22:53 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<listOfRanges>
+<rangeDef class="oracle.dbtools.crest.model.design.constraint.AVT">
+<beginValue>1</beginValue>
+<endValue>20</endValue>
+</rangeDef>
+</listOfRanges>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="0393A03F-6E6A-5A65-7313-6D3542567A34" name="Bilet_PK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-09 13:57:40 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>16E6B65C-6D1C-A8CC-8A3F-99C0FAF675FA</newElementsIDs>
+<usedAttributes>
+<attributeRef>16E6B65C-6D1C-A8CC-8A3F-99C0FAF675FA</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="0F4E1D94-8BF8-5EC2-5503-15F639C0E6AB" name="Bilet_Combinatie_scaun_UK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-10 10:51:26 UTC</createdTime>
+<ownerDesignName>proiect</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="FEE6E486-7E73-D9C7-8F87-FF3CA02D77CD" value="false"/>
+</engineerTo>
+<newElementsIDs>51835D5C-EDAB-AACB-909E-CF51EA2577C3,D7663774-0B44-9E55-8BEE-CFB4717657C8,298E8C67-0D5F-A294-0DB8-65D5728525A1</newElementsIDs>
+<usedAttributes>
+<attributeRef>51835D5C-EDAB-AACB-909E-CF51EA2577C3</attributeRef>
+<attributeRef>D7663774-0B44-9E55-8BEE-CFB4717657C8</attributeRef>
+<attributeRef>298E8C67-0D5F-A294-0DB8-65D5728525A1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="31941BA1-4A8A-17FB-5508-E23C0AD63365" name="TIP_BILET">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>9D978090-AF0E-88CC-6581-E4F877C65E82</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="id_tip" id="0DF7E8D1-27B4-32AB-CB66-85A780D89178">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>15A42DDE-FD5A-1DE5-FC7A-1C3FEEEBD10A</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>1</dataTypePrecision>
+<ownDataTypeParameters>,1,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<identityColumn>true</identityColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="nume_tip" id="3FC7551E-2D7D-D960-BE3F-8FBAAB24ED4C">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>C68D5103-6E87-BBA5-4616-20DD02364CA4</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="UPPER(%column%) =&apos;STUDENT&apos;  OR UPPER(%column%) =&apos;ELEV&apos; OR UPPER(%column%) =&apos;ADULT&apos; OR UPPER(%column%) =&apos;PENSIONAR&apos; OR UPPER(%column%) =&apos;COPIL&apos;  "/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="reducere" id="4F02DEB4-B8AD-F7C9-37B6-57D2F53778FA">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>24B2D609-749A-2BCD-96B6-4C77BFE21816</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="%column%&gt;= 0"/>
+</checkConstraint>
+<ownDataTypeParameters>,2,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9B397C49-8DDB-7133-9DF4-DFB5B7A9A438" name="tip_bilet_PK">
+<createdBy>matei</createdBy>
+<createdTime>2022-11-24 20:25:47 UTC</createdTime>
+<generatorID>3D96917A-F4CA-A5C5-4830-26941B68C13D</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0DF7E8D1-27B4-32AB-CB66-85A780D89178"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="353A931C-29EC-497B-9144-318B9FAFE233" name="tip_film_UK">
+<createdBy>matei</createdBy>
+<createdTime>2022-12-05 22:27:35 UTC</createdTime>
+<generatorID>5C677919-4FE2-17B4-E2E4-5D27ABBAC673</generatorID>
+<ownerDesignName>proiect</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3FC7551E-2D7D-D960-BE3F-8FBAAB24ED4C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
